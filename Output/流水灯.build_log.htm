@@ -1,0 +1,56 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\StudySpace\毕设\cy.luan\小车低盘程序\ROSCarProject\Project\RVMDK（uv4）\iSO-STM32.uvproj
+Project File Date:  01/01/2017
+
+<h2>Output:</h2>
+Build target 'ros_base'
+compiling encoder.c...
+linking...
+Program Size: Code=17664 RO-data=624 RW-data=380 ZI-data=1276  
+FromELF: creating hex file...
+"..\..\Output\ros_base.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+rror(s), 0 Warning(s).
+eed1;
+..\..\User\encoder\encoder.c(247): error:  #20: identifier "Speed1" is undefined
+        span=1*(Speed1-Speed2);
+..\..\User\encoder\encoder.c(247): error:  #20: identifier "Speed2" is undefined
+        span=1*(Speed1-Speed2);
+..\..\User\encoder\encoder.c(258): error:  #20: identifier "Speed2" is undefined
+        span=1*(Speed2-Speed1);
+..\..\User\encoder\encoder.c(258): error:  #20: identifier "Speed1" is undefined
+        span=1*(Speed2-Speed1);
+..\..\User\encoder\encoder.c: 0 warnings, 6 errors
+"..\..\Output\ros_base.axf" - 6 Error(s), 0 Warning(s).
+Target not created
+ifier "UTRA_SAMPLING_TIME" is undefined
+  static unsigned short int Utra_sample=UTRA_SAMPLING_TIME;
+..\..\User\encoder\encoder.h(37): error:  #20: identifier "Spin_SAMPLING_TIME" is undefined
+  static unsigned short int Spin_sample=Spin_SAMPLING_TIME;
+..\..\User\stm32f10x_it.c: 0 warnings, 2 errors
+"..\..\Output\ros_base.axf" - 6 Error(s), 0 Warning(s).
+Target not created
+or(s), 0 Warning(s).
+compiling odometry.c...
+linking...
+Program Size: Code=18344 RO-data=624 RW-data=404 ZI-data=1276  
+FromELF: creating hex file...
+"..\..\Output\流水灯.axf" - 0 Error(s), 1 Warning(s).
+error:  #20: identifier "FLASH_PrefetchBuffer_Enable" is undefined
+                FLASH_PrefetchBufferCmd(FLASH_PrefetchBuffer_Enable); //开启FLASH预读缓冲功能，加速FLASH的读取。所有程序中必须的用法.位置：RCC初始化子函数里面，时钟起振之后
+..\..\User\RCC_Conf\rcc_conf.c(14): warning:  #223-D: function "FLASH_SetLatency" declared implicitly
+                FLASH_SetLatency(FLASH_Latency_2);                    //flash操作的延时
+..\..\User\RCC_Conf\rcc_conf.c(14): error:  #20: identifier "FLASH_Latency_2" is undefined
+                FLASH_SetLatency(FLASH_Latency_2);                    //flash操作的延时
+..\..\User\RCC_Conf\rcc_conf.c: 2 warnings, 2 errors
+compiling tim2_5_6.c...
+compiling usart.c...
+compiling odometry.c...
+"..\..\Output\流水灯.axf" - 2 Error(s), 3 Warning(s).
+Target not created

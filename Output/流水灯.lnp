@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"..\..\output\startup_stm32f10x_hd.o"
+"..\..\output\core_cm3.o"
+"..\..\output\system_stm32f10x.o"
+"..\..\output\misc.o"
+"..\..\output\stm32f10x_exti.o"
+"..\..\output\stm32f10x_flash.o"
+"..\..\output\stm32f10x_gpio.o"
+"..\..\output\stm32f10x_iwdg.o"
+"..\..\output\stm32f10x_rcc.o"
+"..\..\output\stm32f10x_tim.o"
+"..\..\output\stm32f10x_usart.o"
+"..\..\output\delay.o"
+"..\..\output\nvic_conf.o"
+"..\..\output\rcc_conf.o"
+"..\..\output\gpio_conf.o"
+"..\..\output\usart.o"
+"..\..\output\odometry.o"
+"..\..\output\tim2_5_6.o"
+"..\..\output\contact.o"
+"..\..\output\encoder.o"
+"..\..\output\pid.o"
+"..\..\output\main.o"
+"..\..\output\stm32f10x_it.o"
+--library_type=microlib --strict --scatter "..\..\Output\流水灯.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "..\..\Listing\流水灯.map" -o ..\..\Output\流水灯.axf
